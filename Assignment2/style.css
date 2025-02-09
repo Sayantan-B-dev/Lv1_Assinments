@@ -57,7 +57,6 @@ footer{
     text-align: center;
 }
 .navdiv{
-    background: linear-gradient(to right,#110f0f,#5c5252);
     display: flex;
     justify-content: center;
     width: fit-content;
