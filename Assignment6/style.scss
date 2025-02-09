@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(70, 8, 8);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: antiquewhite;
+    margin-top: auto;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: 1000;
+    h1  {
+            text-align: center;
+            padding: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 500;
+        }
+}
+
+.image {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px black;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.img-grid {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    align-items: stretch;
+    gap: 20px;
+}
+
+@for $i from 1 through 12 {
+    .image-#{nth(a b c d e f g h i j k l, $i)} {
+        grid-area: #{nth(a b c d e f g h i j k l, $i)};
+    }
+}
+
+@media (min-width: 1024px){
+    .img-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "a a b c"
+            "a a d e"
+            "f g h h"
+            "i i i j"
+            "k l l l";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .img-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a a b"
+            "c d b"
+            "e f f"
+            "g h j"
+            "g i j"
+            "g i j"
+            "k k l";
+    }
+}
+
+@media (max-width: 767px) {
+    .img-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a b c"
+            "d d e"
+            "f g g"
+            "h h i"
+            "j k k"
+            "l l l";
+    }
+}
+
+@media (max-width: 480px) {
+    .img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+            "d e"
+            "f g"
+            "h h"
+            "i j"
+            "k k"
+            "l l";
+    }
+}
+
+footer{
+    height: fit-content;
+    margin: auto;
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    padding: 30px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

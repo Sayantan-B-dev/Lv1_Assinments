@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(70, 8, 8);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: black;
+  color: antiquewhite;
+  margin-top: auto;
+}
+header h1 {
+  text-align: center;
+  padding: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+}
+
+.image {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px black;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.img-grid {
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.image-a {
+  grid-area: a;
+}
+
+.image-b {
+  grid-area: b;
+}
+
+.image-c {
+  grid-area: c;
+}
+
+.image-d {
+  grid-area: d;
+}
+
+.image-e {
+  grid-area: e;
+}
+
+.image-f {
+  grid-area: f;
+}
+
+.image-g {
+  grid-area: g;
+}
+
+.image-h {
+  grid-area: h;
+}
+
+.image-i {
+  grid-area: i;
+}
+
+.image-j {
+  grid-area: j;
+}
+
+.image-k {
+  grid-area: k;
+}
+
+.image-l {
+  grid-area: l;
+}
+
+@media (min-width: 1024px) {
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a a b c" "a a d e" "f g h h" "i i i j" "k l l l";
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a a b" "c d b" "e f f" "g h j" "g i j" "g i j" "k k l";
+  }
+}
+@media (max-width: 767px) {
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c" "d d e" "f g g" "h h i" "j k k" "l l l";
+  }
+}
+@media (max-width: 480px) {
+  .img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a a" "b b" "c c" "d e" "f g" "h h" "i j" "k k" "l l";
+  }
+}
+footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 30px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

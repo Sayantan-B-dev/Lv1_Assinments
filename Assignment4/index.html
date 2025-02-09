@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Caveat:wght@400..700&family=Forum&family=Freckle+Face&family=Hedvig+Letters+Serif:opsz@12..24&family=Jaro:opsz@6..72&family=Libre+Baskerville&family=Merienda:wght@300..900&family=Modern+Antiqua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,700;1,700&family=Share+Tech+Mono&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="fullform">
+        <div class="forminfo">
+            <h3>Start Your Journey with Us</h3>
+            <div>
+                <div class="option CreateAccount"><a href="">Create an Account</a></div>
+                <div class="option CompleteProfile"><a href="">Complete Your Profile</a></div>
+                <div class="option ChoosePlan"><a href="">Choose Your Plan</a></div>
+                <div class="option BookSession"><a href="">Choose a Service</a></div>
+            </div>
+            
+        </div>
+        <div class="form">
+            <img class="image" src="https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_960_720.png" alt="">
+        </div>
+    </div>
+    
+    
+<script>
+    const options = document.querySelectorAll('.option');
+    document.querySelector('.CreateAccount').addEventListener('click', (e) => loadform('./forms/form1.html',e))
+    document.querySelector('.CompleteProfile').addEventListener('click', (e) => loadform('./forms/form2.html', e))
+    document.querySelector('.ChoosePlan').addEventListener('click', (e) => loadform('./forms/form3.html', e))
+    document.querySelector('.BookSession').addEventListener('click', (e) => loadform('./forms/form4.html', e))
+
+    options.forEach(option => {
+        option.addEventListener('click', (event) => {
+            event.preventDefault();
+            options.forEach(opt => {
+                opt.classList.remove('active');
+            });
+            option.classList.add('active');
+        });
+    });
+    function loadform(file,e){
+        e.preventDefault();
+        fetch(file)
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('.form').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading the HTML form:', error);
+            });
+    }
+</script>
+</body>
+</html>

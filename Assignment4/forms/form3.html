@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<h2>Choose Your Plan</h2>
+<form form action="/form">
+    <div class="inputfield">
+        <label class="fat-label" for="plan">Select a plan</label>
+        <select class="customInput" name="plan" id="plan" required>
+            <option value="" disabled selected>Select a plan</option>
+            <option value="USA">Free Plan - Limited Access</option>
+            <option value="Canada">Standard Plan - $9.99/month</option>
+            <option value="UK">Premium Plan - $19.99/month</option>
+        </select>
+    </div>
+    <div class="inputfield">
+        <div>
+            <label class="fat-label" for="payment">Payment method</label>
+        </div>
+        <div class="radio" required>
+            <input type="radio" id="card" name="gender" value="male">
+            <label for="card">Card</label>
+            <input type="radio" id="upi" name="gender" value="female">
+            <label for="upi">UPI</label>
+            <input type="radio" id="paypal" name="gender" value="other">
+            <label for="paypal">Paypal</label>
+        </div>
+    </div>
+    <div class="inputfield ">
+        <label class="fat-label" for="cardno">Card Number</label>
+        <input type="text" id="cardno" name="cardno" placeholder="Enter your card number" required
+            pattern="^(?:\d{4}[- ]?){3}\d{4}$" maxlength="19" minlength="13" autocomplete="cc-number"
+            inputmode="numeric" aria-label="Card Number">
+    </div>
+    <div class="inner-payment-date">
+        <div class="inputfield">
+            <label class="fat-label" for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" placeholder="MM/YYYY" min="2025-01" max="2030-12" required />
+        </div>
+        <div class="inputfield">
+            <label class="fat-label" for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" pattern="^[0-9]{3,4}$" maxlength="4" minlength="3"
+                inputmode="numeric" required />
+        </div>
+    </div>
+    <button id="submitBtn">Save &amp; Continue</button>
+</form>

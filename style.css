@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Unbounded", serif;
+  height: 100%;
+  background-color: #d7c7fd;
+}
+
+main {
+  height: 100%;
+  background: radial-gradient(ellipse at top, #040d41, #566877), radial-gradient(ellipse at bottom, #414a4c, #3b444b);
+  font-family: "Trirong", serif;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 2px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: #1B1833;
+  box-shadow: inset 0px -10px 15px rgba(245, 222, 179, 0.589);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+.container::-webkit-scrollbar-thumb {
+  background: rgba(245, 222, 179, 0.6);
+  border-radius: 10px;
+  height: 30%;
+}
+.container::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 20px 0;
+}
+
+.card {
+  text-wrap: wrap;
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 5px 10px rgb(0, 0, 0);
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover {
+  background-color: blueviolet;
+  outline: 2px solid black;
+  transform: scale(1.1);
+  animation: cardAnimate 1s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes cardAnimate {
+  0% {
+    box-shadow: 0px 0px 5px white;
+  }
+  50% {
+    box-shadow: 0px 0px 10px white;
+  }
+  100% {
+    box-shadow: 0px 0px 5px white;
+  }
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color: white;
+}/*# sourceMappingURL=style.css.map */

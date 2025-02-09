@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="./static/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><a href="./index.html">The CatCodersCrew</a></h1>
+        <ul type="none" class="nav">
+            <li><a href="./static/html/meow.html">Meoww</a></li>
+            <li><a href="./static/html/team.html">Team</a></li>
+            <li><a href="./static/html/Pokemons.html">Pokemons</a></li>
+            <li><a href="./static/html/skills.html">Skills</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="leftSide">
+            <h3><a href="#" onclick="toggleDropdown()">Explore more</a></h3>
+            <div id="dropdownContent">
+                <p class="p">What do we like to eat?</p>
+                <p class="p">What is our favourite language?</p>
+                <p class="p">Who is our Inspiration?</p>
+                <p>How do I maintain our Health?</p>
+            </div>
+        </div>
+        <div class="rightSide">
+            <h2>Code!Sleep!Meow!</h2>
+            <div class="images">
+                <div class="image-container">
+                    <img src="./static/images/frontend cat.gif"
+                        alt="">
+                    <div class="img-txt">
+                        <h3>Ollie</h3>
+                        <ul>
+                            <li>Expert in HTML, CSS, JavaScript, React</li>
+                            <li>Crafts stunning, responsive designs</li>
+                            <li>Loves smooth animations and pixel-perfect UIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./static/images/backend cat.gif"
+                        alt="">
+                    <div class="img-txt">
+                        <h3>Max</h3>
+                        <ul>
+                            <li>Master of Node.js, Express, databases (MongoDB, PostgreSQL)</li>
+                            <li>Builds powerful, scalable APIs</li>
+                            <li>Ensures everything runs securely and efficiently</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./static/images/debugger cat.gif"
+                        alt="">
+                    <div class="img-txt">
+                        <h3>Toby</h3>
+                        <ul>
+                            <li>Works with both frontend and backend</li>
+                            <li>Fixes bugs faster than a laser pointer chase</li>
+                            <li>Optimizes performance and smoothens deployments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <p>We are <strong>CatCoders</strong>—elite feline programmers with sharp claws and sharper code. We craft seamless websites, debug with
+            precision, and judge bad code with zero mercy. Need a purrfectly built platform? Feed us, and we’ll deliver.</p>
+            <br>
+            <p><span class="catCoders">CatCodersCrew:</span></p>
+            <ul class="right-list">
+                <li><strong>Ollie:</strong>Frontend Purrfectionist.🎨</li>
+                <li><strong>Max:</strong>Backend Architect.🔧</li>
+                <li><strong>Toby:</strong>Full-Stack Debugger.🐛</li>
+            </ul>
+            <br>
+            <p>Curious about who we are and what we do? Learn more about our expertise, passion, and projects—visit <a href="">About Us</a> today!</p>
+            <br>
+            <p>A big meow of appreciation! Let’s craft something amazing! 😺</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 CatCodersCrew | All Rights Reserved</p>
+    </footer>
+<script>
+    function toggleDropdown() {
+        var content = document.getElementById("dropdownContent");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
