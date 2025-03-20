@@ -13,22 +13,24 @@
             align-items: center;
             background-color: rgb(34, 33, 33);
             overflow-y: none;
-            color:white;
+            color: white;
         }
 
         body {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            gap:5rem;
+            gap: 5rem;
             width: 100%;
 
         }
+
         .Questions {
             display: grid;
             grid-template-columns: 0.8fr 0.2fr 1fr;
             width: 100%;
         }
+
         .mainQ {
             background-color: burlywood;
             margin: auto;
@@ -99,7 +101,8 @@
                 flex-direction: column;
             }
         }
-        header{
+
+        header {
             background-color: black;
             color: white;
             text-align: center;
@@ -107,7 +110,8 @@
             width: 100%;
             border-bottom: 1px solid white;
         }
-        footer{
+
+        footer {
             background-color: black;
             color: white;
             text-align: center;
@@ -115,24 +119,115 @@
             width: 100%;
             border-top: 1px solid white;
         }
-        .arrow{
+
+        .arrow {
             display: flex;
             justify-content: center;
             align-items: center;
             color: rgb(255, 255, 255);
             text-shadow: 2px 2px 2px rgb(0, 0, 0);
         }
-        .arrow span{
+
+        .arrow span {
             font-size: 75px;
         }
+
+        pre {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .console {
+            background-color: #484849;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .warn {
+            color: #ffa500;
+            font-weight: bold;
+        }
+
+        .blue {
+            color: #00bfff;
+        }
+
+        .red {
+            color: #ff4444;
+            font-style: italic;
+        }
+
+        .cyan {
+            color: cyan;
+            font-weight: bold;
+        }
     </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
 </head>
 
 <body>
-    <header>
-        <p>USE CONSOLE TO GIVE INPUT FOR THIS PROBLEMS YOU CAN ALSO ACCESS THE FUNCTIONS OF A PROBLEM THERE</p>
-    </header>
+    <details style="margin: auto;">
+        <summary>Open the console by pressing F12 or right-clicking and selecting "Inspect" to try these functions.
+        </summary>
+        <div class="console">
+            <p class="warn">1. Check if a 10-digit number is a valid ISBN</p>
+            <p>Valid ISBN (Example: 1234567890): <span class="blue">isISBN(1234567890)</span></p>
+            <p>Invalid ISBN (Example: 12345): <span class="blue">isISBN(12345)</span></p>
+
+            <p class="warn">2. Find GCD of Two Numbers</p>
+            <p>GCD of 48 and 18: <span class="blue">gcd(48, 18)</span></p>
+
+            <p class="warn">3. Check if a number is a Harshad Number</p>
+            <p>Harshad Number (Example: 18): <span class="blue">harshad(18)</span></p>
+            <p>Not a Harshad Number (Example: 19): <span class="blue">harshad(19)</span></p>
+
+            <p class="warn">4. Check if a number is a Perfect Square</p>
+            <p>Perfect Square (Example: 16): <span class="blue">isPerfectSquare(16)</span></p>
+            <p>Not a Perfect Square (Example: 17): <span class="blue">isPerfectSquare(17)</span></p>
+
+            <p class="warn">5. Check if a number is Abundant</p>
+            <p>Abundant Number (Example: 12): <span class="blue">isAbundant(12)</span></p>
+            <p>Not an Abundant Number (Example: 15): <span class="blue">isAbundant(15)</span></p>
+
+            <p class="warn">6. Generate Fibonacci Sequence</p>
+            <p>First 7 Fibonacci numbers: <span class="blue">fibonacci(7)</span></p>
+
+            <p class="warn">7. Find numbers with a given number of divisors</p>
+            <p>Numbers with 4 divisors: <span class="blue">Divisors(4)</span></p>
+
+            <p class="warn">8. Find Prime Factors of a number</p>
+            <p>Prime factors of 30: <span class="blue">primeFactors(30)</span></p>
+            <p>Prime factors of 84: <span class="blue">primeFactors(84)</span></p>
+
+            <p class="warn">9. Area Calculator (Circle, Rectangle, Triangle)</p>
+            <p>Requires User Input. Simply call <span class="red">area()</span></p>
+
+            <p class="warn">10. Check if a number is a Neon Number</p>
+            <p>Neon Number (Example: 9): <span class="blue">neonNum(9)</span></p>
+            <p>Not a Neon Number (Example: 10): <span class="blue">neonNum(10)</span></p>
+
+            <p class="warn">11. Sum of Even Indexed Fibonacci Numbers</p>
+            <p>Sum of even-indexed Fibonacci numbers up to 10: <span class="blue">fibonacciEVEN(10)</span></p>
+
+            <p class="warn">12. Find Largest Digit in a Number</p>
+            <p>Largest Digit in 37495: <span class="blue">LargestDigit(37495)</span></p>
+
+            <p class="warn">13. Find LCM of Two Numbers</p>
+            <p>LCM of 12 and 18: <span class="blue">lcm(12, 18)</span></p>
+
+            <p class="warn">14. Sum of Even Digits in a Number</p>
+            <p>Sum of even digits in 123456: <span class="blue">SumEvenDigit(123456)</span></p>
+
+            <p class="warn">15. Find Number of Days in a Given Month</p>
+            <p>Days in February 2020 (Leap Year): <span class="blue">DaysIMonth('feb', 2020)</span></p>
+            <p>Days in April 2023: <span class="blue">DaysIMonth('apr', 2023)</span></p>
+        </div>
+    </details>
     <div class="Questions">
         <div class="mainQ">
             <div id="ans1"><a href="./html/q1.html"><button>Q1</button></a></div>
@@ -154,105 +249,371 @@
         <div class="arrow">
             <span class="material-symbols-outlined">
                 arrow_forward
-                </span>
+            </span>
         </div>
         <div class="message">
             <div class="p" id="q1">
                 <h2>1. ISBN Number</h2>
-                <p><strong>Description:</strong> An ISBN (International Standard Book Number) is a unique 10-digit number assigned to books.</p>
+                <p><strong>Description:</strong> An ISBN (International Standard Book Number) is a unique 10-digit
+                    number assigned to books.</p>
                 <p><strong>Hint:</strong> Multiply each digit by its position and check divisibility by 11.</p>
             </div>
-        
+
             <div class="p" id="q2">
                 <h2>2. HCF/GCD</h2>
-                <p><strong>Description:</strong> The Highest Common Factor (HCF) or Greatest Common Divisor (GCD) of two numbers.</p>
+                <p><strong>Description:</strong> The Highest Common Factor (HCF) or Greatest Common Divisor (GCD) of two
+                    numbers.</p>
                 <p><strong>Hint:</strong> Use the Euclidean algorithm: GCD(a, b) = GCD(b, a % b).</p>
             </div>
-        
+
             <div class="p" id="q3">
                 <h2>3. Harshad Number</h2>
-                <p><strong>Description:</strong> A number is a Harshad number if it is divisible by the sum of its digits.</p>
+                <p><strong>Description:</strong> A number is a Harshad number if it is divisible by the sum of its
+                    digits.</p>
                 <p><strong>Hint:</strong> Extract digits using modulo (%) and integer division (//).</p>
             </div>
-        
+
             <div class="p" id="q4">
                 <h2>4. Perfect Square</h2>
                 <p><strong>Description:</strong> A number is a perfect square if it is the square of an integer.</p>
                 <p><strong>Hint:</strong> Use sqrt(N), check if it’s an integer.</p>
             </div>
-        
+
             <div class="p" id="q5">
                 <h2>5. Abundant Number</h2>
-                <p><strong>Description:</strong> A number is abundant if the sum of its proper divisors is greater than the number itself.</p>
+                <p><strong>Description:</strong> A number is abundant if the sum of its proper divisors is greater than
+                    the number itself.</p>
                 <p><strong>Hint:</strong> Use a loop to find proper divisors.</p>
             </div>
-        
+
             <div class="p" id="q6">
                 <h2>6. Fibonacci Series using Loop</h2>
                 <p><strong>Description:</strong> Print Fibonacci series up to N terms using a loop.</p>
                 <p><strong>Hint:</strong> Use a loop and store previous two numbers.</p>
             </div>
-        
+
             <div class="p" id="q7">
                 <h2>7. Find Numbers with Exactly X Divisors</h2>
                 <p><strong>Description:</strong> Find numbers that have exactly X divisors.</p>
                 <p><strong>Hint:</strong> Use prime factorization.</p>
             </div>
-        
+
             <div class="p" id="q8">
                 <h2>8. Prime Factors</h2>
                 <p><strong>Description:</strong> Find all prime factors of a number.</p>
                 <p><strong>Hint:</strong> Use division method.</p>
             </div>
-        
+
             <div class="p" id="q9">
                 <h2>9. Calculate Area using Switch Statement</h2>
-                <p><strong>Description:</strong> Find the area of a circle, rectangle, or triangle using switch statements.</p>
+                <p><strong>Description:</strong> Find the area of a circle, rectangle, or triangle using switch
+                    statements.</p>
                 <p><strong>Hint:</strong> Use switch with case statements.</p>
             </div>
-        
+
             <div class="p" id="q10">
                 <h2>10. Neon Number</h2>
-                <p><strong>Description:</strong> A number where the sum of digits of its square equals the number itself.</p>
+                <p><strong>Description:</strong> A number where the sum of digits of its square equals the number
+                    itself.</p>
                 <p><strong>Hint:</strong> Find square, sum digits, compare.</p>
             </div>
-        
+
             <div class="p" id="q11">
                 <h2>11. Sum of Even Indexed Fibonacci Numbers</h2>
-                <p><strong>Description:</strong> Find the sum of Fibonacci numbers at even indices up to the 2Nth Fibonacci number.</p>
+                <p><strong>Description:</strong> Find the sum of Fibonacci numbers at even indices up to the 2Nth
+                    Fibonacci number.</p>
                 <p><strong>Hint:</strong> Use a loop and maintain a sum for even-indexed elements.</p>
             </div>
-        
+
             <div class="p" id="q12">
                 <h2>12. Find the Largest Digit in a Number</h2>
                 <p><strong>Description:</strong> Find the largest digit in a given number.</p>
                 <p><strong>Hint:</strong> Extract digits using modulo (% 10) and compare.</p>
             </div>
-        
+
             <div class="p" id="q13">
                 <h2>13. Find LCM of Two Numbers</h2>
                 <p><strong>Description:</strong> Find the Least Common Multiple (LCM) of two numbers.</p>
                 <p><strong>Hint:</strong> LCM(a, b) = (a × b) / GCD(a, b).</p>
             </div>
-        
+
             <div class="p" id="q14">
                 <h2>14. Find the Sum of Even Digits in a Number</h2>
                 <p><strong>Description:</strong> Find the sum of all even digits in a given number.</p>
                 <p><strong>Hint:</strong> Extract digits using % 10, check if even, add to sum.</p>
             </div>
-        
+
             <div class="p" id="q15">
                 <h2>15. Number of Days in a Month</h2>
-                <p><strong>Description:</strong> Find the number of days in a given month and year (to handle leap years).</p>
+                <p><strong>Description:</strong> Find the number of days in a given month and year (to handle leap
+                    years).</p>
                 <p><strong>Hint:</strong> Check month and year conditions.</p>
             </div>
         </div>
     </div>
+    <section class="solution">
+        <details>
+            <summary>Solution 1</summary>
+            <pre><code>
+function isISBN(n) {
+    let index = 10, sum = 0;
     
+    if (n.toString().length != 10) return "Invalid";
+    
+    while (index &gt; 0) {
+        sum += index * (n % 10);
+        n = Math.floor(n / 10);
+        index--;
+    }
+
+    return (sum % 11 === 0) ? "Valid ISBN" : "Invalid ISBN";
+}
+        </code></pre>
+        </details>
+        <details>
+            <summary>Solution 2</summary>
+            <pre><code>
+function gcd(a, b) {
+    while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+    </code></pre>
+        </details>
+        <details>
+            <summary>Solution 3</summary>
+            <pre><code>
+function harshad(n) {
+    let original=n,a,sum=0
+    while (n !== 0) {
+        a=n%10
+        sum+=a
+        n=Math.floor(n/10)
+    }
+    return (original%sum==0)?"Harshad":"Not Harshad"
+}
+    </code></pre>
+        </details>
+        <details>
+            <summary>Solution 4</summary>
+            <pre><code>
+function isPerfectSquare(n) {
+    return Math.sqrt(n) % 1 === 0 ? "Perfect Square" : "Not a Perfect Square";
+}
+    </code></pre>
+        </details>
+        <details>
+            <summary>Solution 5</summary>
+            <pre><code>
+function isAbundant(n) {
+    let sum = 0;
+    for (let i = 1; i &lt;= n / 2; i++) {
+        if (n % i === 0) {
+            sum += i;
+        }
+    }
+    return sum &gt; n ? "Abundant Number" : "Not an Abundant Number";
+}
+    </code></pre>
+        </details>
+        <details>
+            <summary>Solution 6</summary>
+            <pre><code>
+function fibonacci(n){
+    let a=0,b=1,c
+    let arr=[a,b]
+    for(let i=2;i&lt;n;i++){
+        c=a+b
+        a=b
+        b=c
+        arr.push(c)
+    }
+    return arr
+}
+    </code></pre>
+        </details>
+        <details>
+            <summary>Solution 7</summary>
+            <pre><code>
+function Divisors(x){
+    let arr=[]
+    for(let i=1;i&lt;=1000;i++){
+        let count=0
+        for(let j=1;j&lt;=i;j++){
+            if(i%j==0){
+                count++
+            }
+        }
+        if(count==x){
+            arr.push(i)
+        }
+    }
+    return arr
+}
+        </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 8</summary>
+            <pre><code>
+function primeFactors(n) {
+    let factors = [], i = 2;
+    while (i &lt;= Math.sqrt(n)) {
+        if (n % i === 0) {
+            factors.push(i);
+            n /= i;
+        } else {
+            i++;
+        }
+    }
+    if (n &gt; 1) factors.push(n);
+    return factors;
+}
+        </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 9</summary>
+            <pre><code>
+function area() {
+    let inp;
+    do {
+        inp = Number(prompt("1.Circle\n2.Rectangle\n3.Triangle\n0.Exit\nChoose:"));
+        if (isNaN(inp)) continue;
+
+        let a, b, c, s;
+        switch (inp) {
+            case 1:
+                a = Number(prompt("Enter radius:"));
+                console.log(isNaN(a) ? "Invalid" : `Circle Area: ${(Math.PI * a * a).toFixed(2)}`);
+                break;
+            case 2:
+                a = Number(prompt("Enter length:"));
+                b = Number(prompt("Enter width:"));
+                console.log(isNaN(a) || isNaN(b) ? "Invalid" : `Rectangle Area: ${(a * b).toFixed(2)}`);
+                break;
+            case 3:
+                a = Number(prompt("Enter side 1:"));
+                b = Number(prompt("Enter side 2:"));
+                c = Number(prompt("Enter side 3:"));
+                s = (a + b + c) / 2;
+                console.log(isNaN(a) || isNaN(b) || isNaN(c) ? "Invalid" : `Triangle Area: ${(Math.sqrt(s * (s - a) * (s - b) * (s - c))).toFixed(2)}`);
+                break;
+        }
+    } while (inp !== 0);
+}
+        </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 10</summary>
+            <pre><code>
+function neonNum(n){
+    let sum=0,square=n*n
+    while(square!=0){
+        let a=square%10
+        sum+=a
+        square=Math.floor(square/10)
+    }
+    return (sum==n)?"Neon number":"Not Neon Number"
+}
+        </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 11</summary>
+            <pre><code>
+function fibonacciEVEN(n){
+    let a=0,b=1,c,sum=a
+    for(let i=2;i&lt;2*n;i++){
+        c=a+b
+        a=b
+        b=c
+        if (i % 2 === 0) sum += c; 
+    }
+    return sum
+}
+        </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 12</summary>
+            <pre><code>
+function LargestDigit(n){
+    n= Number(prompt("Enter a number:\t"));
+    let large=0
+    while(n!=0){
+        let a=n%10
+        if(a&gt;large) large=a
+        n=Math.floor(n/10)
+    }
+    return large
+}
+            </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 13</summary>
+            <pre><code>
+function lcm(a, b) {
+    return (a * b) / gcd(a, b);
+}
+            </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 14</summary>
+            <pre><code>
+function SumEvenDigit(n){
+    let sum=0
+    while(n!=0){
+        let a=n%10
+        if(a%2==0) sum+=a
+        n=Math.floor(n/10)
+    }
+    return sum
+}
+            </code></pre>
+        </details>
+
+        <details>
+            <summary>Solution 15</summary>
+            <pre><code>
+function DaysIMonth(month,year){
+    year=Number(year)
+    month=month.toLowerCase().slice(0,3)
+    switch(month){
+        case "jan":
+        case "mar":
+        case "may": 
+        case "jul": 
+        case "aug":
+        case "oct":
+        case "dec":
+            return 31
+        case "apr":
+        case "jun":
+        case "sep":
+        case "nov":
+            return 30
+        case "feb":
+            return (year%400==0||(year%4==0&amp;&amp;year%100!=0)&amp;&amp;month=="feb")?29:28
+        default:
+            return "invalid input"
+    }
+}
+            </code></pre>
+        </details>
+
+    </section>
     <footer>
         <h1>Sheryians Coding School</h1>
-        <p>© 2021 Sheryians Coding School. Sayantan Bharati.</p> 
+        <p>© 2021 Sheryians Coding School. Sayantan Bharati.</p>
     </footer>
+    <script src="./index.js"></script>
     <script>
         document.querySelectorAll(".mainQ div").forEach((button, index) => {
             button.addEventListener("mouseenter", () => {
