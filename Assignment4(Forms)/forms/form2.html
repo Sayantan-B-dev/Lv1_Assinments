@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<h2>Complete Your Profile</h2>
+<form form action="/form">
+    <div class="inputfield">
+        <label class="fat-label" for="profilePicture">Profile Picture</label>
+        <input class="customInput" type="file" accept="image/*" id="profilePicture" placeholder="Enter your name"
+            required>
+    </div>
+    <div class="inputfield">
+        <label class="fat-label" for="deb">Date of Birth</label>
+        <input class="customInput" type="date" id="dob" required>
+    </div>
+    <div class="inputfield">
+        <div>
+            <label class="fat-label" for="username">Select your gender</label>
+        </div>
+        <div class="radio" required>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+    </div>
+    <div class="inputfield">
+        <label class="fat-label" for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter address" required>
+    </div>
+    <div class="inputfield">
+        <label class="fat-label" for="city">City</label>
+        <input type="text" id="city" placeholder="Enter city" required>
+    </div>
+    <div class="inputfield">
+        <label class="fat-label" for="Country">Select Country</label>
+        <select class="customInput" name="Country" id="Country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Brazil">Brazil</option>
+        </select>
+    </div>
+    <button id="submitBtn">Save &amp; Continue</button>
+</form>

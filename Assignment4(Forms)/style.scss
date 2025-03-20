@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Unbounded", serif;
+    height: 100dvh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7c7fd;
+    letter-spacing: 1px;
+}
+.fullform{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.forminfo{
+    color: rgb(0, 0, 0);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(ellipse at top, #ececff, rgb(196, 218, 252)),
+                radial-gradient(ellipse at bottom, #dfeaff, black);
+    border-right: 2px dashed black;
+    border-radius: 1rem 0rem 0rem 1rem ;
+    gap: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.61);
+    a{  
+        text-decoration: none;
+        color: rgb(94, 92, 92);
+        
+    }
+}
+.option.active a::before {
+    content: "👉 ";
+    color: black;
+}
+.option.active{
+    padding: 5px;
+    border-radius: 10px;
+}
+.option.active a{
+    color: black;
+}
+
+.allforms{
+    display: flex;
+    position: relative;
+}
+.fat-label{
+    font-weight: 500;
+}
+.form{
+    display: inline-block;
+    width: 30%;
+    color:rgb(0, 0, 0);
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at top, #ececff, rgb(213, 230, 255)),
+                radial-gradient(ellipse at bottom, #dfeaff, black);
+    border-radius: 0rem 1rem 1rem 0rem;
+    gap:2rem;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.61);
+    
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 2rem;
+        transition: all 1s ease-in-out;
+        .inputfield {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 0.5em;
+            input {
+                font-size: 13px;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.082);
+                box-shadow: 5px 10px 10px rgb(255, 255, 255) inset,
+                            0px 10px 10px rgba(0, 0, 0, 0.61);
+                transition: all 0.5 ease-in-out;
+                &::placeholder{
+                    color: #888;
+                    font-size: 16px;
+                    opacity: 1;
+                }
+                &:focus {
+                    height: auto;
+                    transform: scale(1.05);
+                    outline: none;
+                    box-shadow: -5px -10px 10px rgb(255, 255, 255) inset, 0px 0px 5px gold;
+                    background-color: rgb(241, 255, 202);
+                }
+                &:hover {
+                    background-color: #e9ebff;
+                }
+            }
+        }
+        .customInput{
+            font-family: "Unbounded",serif;
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.082);
+            box-shadow: 5px 10px 10px rgb(255, 255, 255) inset,
+                0px 10px 10px rgba(0, 0, 0, 0.61);
+            &:focus {
+                height: auto;
+                transform: scale(1.05);
+                outline: none;
+                box-shadow: -5px -10px 10px rgb(255, 255, 255) inset, 0px 0px 5px gold;
+                background-color: rgb(241, 255, 202);
+            }
+            &:hover{
+                background-color: #e9ebff;
+            }
+        }
+        .inner-payment-date{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            input[type="date"] {
+                font-size: 11px;
+                box-shadow: 5px 10px 10px rgb(255, 255, 255) inset,
+                        0px 10px 10px rgba(0, 0, 0, 0.61);
+            }
+        }
+    }
+}
+textarea{
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    resize: none;
+}
+input[type="radio"]{
+    box-shadow: none!important;
+}
+.radio{
+    display: flex;
+    flex-direction: row !important;
+    gap:10px;
+}
+#submitBtn {
+    font-family: "Unbounded", serif;
+    background-color: #003cff;
+    letter-spacing: 1px;
+    width: 100%;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    &:hover {
+        background-color: #8c5bff;
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+#skipBtn{
+    font-family: "Unbounded", serif;
+    background-color: #3564ff;
+    letter-spacing: 1px;
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    &:hover {
+        color: black;
+        background-color: #4c45ad;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        transform: translateY(5px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+.image{
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+@media (max-width: 900px) {
+    .fullform{
+        flex-direction: column;
+        width: 50%;
+        display: block;
+        align-items: center;
+        max-height: 90vh;
+        position: fixed;
+    }
+    .forminfo{
+        gap: 1rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0rem 0rem;
+        border-right: none;
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .form{
+        width: 100%;
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        border-top: 2px dashed black;
+        z-index: 1;
+    }
+}
+@media (max-width: 768px) {
+    .fullform {
+        width: 60%;
+        height: 100vh;
+    }
+}
+@media (max-width: 480px) {
+    .fullform {
+        width: 80%;
+    }
+}

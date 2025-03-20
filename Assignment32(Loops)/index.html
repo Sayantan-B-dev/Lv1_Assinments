@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment32</title>
+    <style>
+        html {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(34, 33, 33);
+            overflow-y: none;
+            color:white;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap:5rem;
+            width: 100%;
+
+        }
+        .Questions {
+            display: grid;
+            grid-template-columns: 0.8fr 0.2fr 1fr;
+            width: 100%;
+        }
+        .mainQ {
+            background-color: burlywood;
+            margin: auto;
+            display: flex;
+            height: fit-content;
+            width: 50%;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid black;
+            transition: all 0.2s ease;
+            background-color: blue;
+            width: 50px;
+            aspect-ratio: 1/1;
+            color: wheat;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgb(136, 136, 255);
+
+            }
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .message {
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 10px;
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            transition: width 0.5s ease;
+            opacity: 0;
+        }
+
+        .p {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media (max-width:500px) {
+            .mainQ {
+                width: 50%;
+            }
+
+            .message {
+                padding: 70px;
+            }
+
+            body {
+                flex-direction: column;
+            }
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            width: 100%;
+            border-bottom: 1px solid white;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            width: 100%;
+            border-top: 1px solid white;
+        }
+        .arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        }
+        .arrow span{
+            font-size: 75px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+</head>
+
+<body>
+    <header>
+        <p>USE CONSOLE TO GIVE INPUT FOR THIS PROBLEMS YOU CAN ALSO ACCESS THE FUNCTIONS OF A PROBLEM THERE</p>
+    </header>
+    <div class="Questions">
+        <div class="mainQ">
+            <div id="ans1"><a href="./html/q1.html"><button>Q1</button></a></div>
+            <div id="ans2"><a href="./html/q2.html"><button>Q2</button></a></div>
+            <div id="ans3"><a href="./html/q3.html"><button>Q3</button></a></div>
+            <div id="ans4"><a href="./html/q4.html"><button>Q4</button></a></div>
+            <div id="ans5"><a href="./html/q5.html"><button>Q5</button></a></div>
+            <div id="ans6"><a href="./html/q6.html"><button>Q6</button></a></div>
+            <div id="ans7"><a href="./html/q7.html"><button>Q7</button></a></div>
+            <div id="ans8"><a href="./html/q8.html"><button>Q8</button></a></div>
+            <div id="ans9"><a href="./html/q9.html"><button>Q9</button></a></div>
+            <div id="ans10"><a href="./html/q10.html"><button>Q10</button></a></div>
+            <div id="ans11"><a href="./html/q11.html"><button>Q11</button></a></div>
+            <div id="ans12"><a href="./html/q12.html"><button>Q12</button></a></div>
+            <div id="ans13"><a href="./html/q13.html"><button>Q13</button></a></div>
+            <div id="ans14"><a href="./html/q14.html"><button>Q14</button></a></div>
+            <div id="ans15"><a href="./html/q15.html"><button>Q15</button></a></div>
+        </div>
+        <div class="arrow">
+            <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+        </div>
+        <div class="message">
+            <div class="p" id="q1">
+                <h2>1. ISBN Number</h2>
+                <p><strong>Description:</strong> An ISBN (International Standard Book Number) is a unique 10-digit number assigned to books.</p>
+                <p><strong>Hint:</strong> Multiply each digit by its position and check divisibility by 11.</p>
+            </div>
+        
+            <div class="p" id="q2">
+                <h2>2. HCF/GCD</h2>
+                <p><strong>Description:</strong> The Highest Common Factor (HCF) or Greatest Common Divisor (GCD) of two numbers.</p>
+                <p><strong>Hint:</strong> Use the Euclidean algorithm: GCD(a, b) = GCD(b, a % b).</p>
+            </div>
+        
+            <div class="p" id="q3">
+                <h2>3. Harshad Number</h2>
+                <p><strong>Description:</strong> A number is a Harshad number if it is divisible by the sum of its digits.</p>
+                <p><strong>Hint:</strong> Extract digits using modulo (%) and integer division (//).</p>
+            </div>
+        
+            <div class="p" id="q4">
+                <h2>4. Perfect Square</h2>
+                <p><strong>Description:</strong> A number is a perfect square if it is the square of an integer.</p>
+                <p><strong>Hint:</strong> Use sqrt(N), check if it’s an integer.</p>
+            </div>
+        
+            <div class="p" id="q5">
+                <h2>5. Abundant Number</h2>
+                <p><strong>Description:</strong> A number is abundant if the sum of its proper divisors is greater than the number itself.</p>
+                <p><strong>Hint:</strong> Use a loop to find proper divisors.</p>
+            </div>
+        
+            <div class="p" id="q6">
+                <h2>6. Fibonacci Series using Loop</h2>
+                <p><strong>Description:</strong> Print Fibonacci series up to N terms using a loop.</p>
+                <p><strong>Hint:</strong> Use a loop and store previous two numbers.</p>
+            </div>
+        
+            <div class="p" id="q7">
+                <h2>7. Find Numbers with Exactly X Divisors</h2>
+                <p><strong>Description:</strong> Find numbers that have exactly X divisors.</p>
+                <p><strong>Hint:</strong> Use prime factorization.</p>
+            </div>
+        
+            <div class="p" id="q8">
+                <h2>8. Prime Factors</h2>
+                <p><strong>Description:</strong> Find all prime factors of a number.</p>
+                <p><strong>Hint:</strong> Use division method.</p>
+            </div>
+        
+            <div class="p" id="q9">
+                <h2>9. Calculate Area using Switch Statement</h2>
+                <p><strong>Description:</strong> Find the area of a circle, rectangle, or triangle using switch statements.</p>
+                <p><strong>Hint:</strong> Use switch with case statements.</p>
+            </div>
+        
+            <div class="p" id="q10">
+                <h2>10. Neon Number</h2>
+                <p><strong>Description:</strong> A number where the sum of digits of its square equals the number itself.</p>
+                <p><strong>Hint:</strong> Find square, sum digits, compare.</p>
+            </div>
+        
+            <div class="p" id="q11">
+                <h2>11. Sum of Even Indexed Fibonacci Numbers</h2>
+                <p><strong>Description:</strong> Find the sum of Fibonacci numbers at even indices up to the 2Nth Fibonacci number.</p>
+                <p><strong>Hint:</strong> Use a loop and maintain a sum for even-indexed elements.</p>
+            </div>
+        
+            <div class="p" id="q12">
+                <h2>12. Find the Largest Digit in a Number</h2>
+                <p><strong>Description:</strong> Find the largest digit in a given number.</p>
+                <p><strong>Hint:</strong> Extract digits using modulo (% 10) and compare.</p>
+            </div>
+        
+            <div class="p" id="q13">
+                <h2>13. Find LCM of Two Numbers</h2>
+                <p><strong>Description:</strong> Find the Least Common Multiple (LCM) of two numbers.</p>
+                <p><strong>Hint:</strong> LCM(a, b) = (a × b) / GCD(a, b).</p>
+            </div>
+        
+            <div class="p" id="q14">
+                <h2>14. Find the Sum of Even Digits in a Number</h2>
+                <p><strong>Description:</strong> Find the sum of all even digits in a given number.</p>
+                <p><strong>Hint:</strong> Extract digits using % 10, check if even, add to sum.</p>
+            </div>
+        
+            <div class="p" id="q15">
+                <h2>15. Number of Days in a Month</h2>
+                <p><strong>Description:</strong> Find the number of days in a given month and year (to handle leap years).</p>
+                <p><strong>Hint:</strong> Check month and year conditions.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <h1>Sheryians Coding School</h1>
+        <p>© 2021 Sheryians Coding School. Sayantan Bharati.</p> 
+    </footer>
+    <script>
+        document.querySelectorAll(".mainQ div").forEach((button, index) => {
+            button.addEventListener("mouseenter", () => {
+                document.querySelectorAll(".p").forEach(p => p.style.display = "none"); // Hide all
+                document.querySelector(`#q${index + 1}`).style.display = "block"; // Show the hovered one
+            });
+
+            button.addEventListener("mouseleave", () => {
+                document.querySelector(`#q${index + 1}`).style.display = "none"; // Hide when not hovering
+            });
+        });
+        document.querySelectorAll(".mainQ div").forEach((button, index) => {
+            button.addEventListener("mouseenter", () => {
+                document.querySelector(".message").style.opacity = 1;
+            });
+            button.addEventListener("mouseleave", () => {
+                document.querySelector(".message").style.opacity = 0;
+            });
+        });
+    </script>
+</body>
+
+</html>

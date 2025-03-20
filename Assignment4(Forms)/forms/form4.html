@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<h2>Choose a Service</h2>
+<form form action="/form">
+    <div class="inputfield">
+        <label class="fat-label" for="service">Select Development Service</label>
+        <select class="customInput" name="service" id="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">Full Stack Development</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="optimization">Web Optimization</option>
+            <option value="seo">SEO Services</option>
+            <option value="appdev">App Development</option>
+            <option value="database">Database Design</option>
+            <option value="websecurity">Web Security</option>
+        </select>
+    </div>
+    <div class="inputfield">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="inputfield">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+    </div>
+    <div class="inputfield">
+        <label for="request">Additional Requests</label>
+        <textarea class="inputfield" name="request" id="request" rows="4" cols="50"></textarea>
+    </div>
+    <button id="submitBtn">Confirm and Submit</button>
+</form>

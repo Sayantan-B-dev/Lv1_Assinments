@@ -1,0 +1,71 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Benedict\ Sans\ Regular.otf) format('opentype');
+}
+.meow-text{
+    cursor:url('../images/sml.png') 8 8, auto;
+    font-family:'myFont',sans-serif;
+    font-size: 1.5rem;
+}
+/*  */
+.main-team{
+    height: auto;
+    background-color: cadetblue;
+}
+.profile-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.5s ease ;
+}
+.team-images{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.team-image-container{
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background: radial-gradient(#635c5c, #000000);
+    box-shadow: 0px 5px 10px black;
+}
+.profile-img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px white;
+}
+.work-ongoing-div,.main-div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(56, 56, 56);
+    height: 100%;
+    text-align:center;
+    font-size: 2rem;
+}
+.work-ongoing-div{
+    height: 100vh;
+    background-image: url(../images/Working\ The\ Incredibles\ GIF.gif);
+    background-size: cover;
+    background-position: center;
+    color:red;
+}
+
+iframe{
+    height: 100vh;
+    margin: 20px;
+    border-radius: 20px;
+}

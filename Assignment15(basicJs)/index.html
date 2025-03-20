@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            gap:5rem;
+        }
+
+        .mainQ {
+            background-color: burlywood;
+            margin: auto;
+            display: flex;
+            height: fit-content;
+            width: 25%;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid black;
+            transition: all 0.2s ease;
+            background-color: blue;
+            width: 50px;
+            aspect-ratio: 1/1;
+            color: wheat;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgb(136, 136, 255);
+
+            }
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .message {
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            transition: width 0.5s ease;
+            opacity: 0;
+        }
+
+        .p {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media (max-width:500px) {
+            .mainQ {
+                width: 50%;
+            }
+
+            .message {
+                padding: 70px;
+            }
+
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <div id="q1" class="p">
+            <h1>Age Category Message</h1>
+            <p>Ask the user for their age. If they are under 18, print “You are a minor.” If they are between 18 and 60,
+                print “You are an adult.” If they are above 60, print “You are a senior citizen.”</p>
+        </div>
+        <div id="q2" class="p">
+            <h1>Even or Odd Sum</h1>
+            <p>Take two numbers from the user using prompt(). If the sum of both numbers is even, print “Even Sum”;
+                otherwise, print “Odd Sum.”</p>
+        </div>
+        <div id="q3" class="p">
+            <h1>Character Case Checker</h1>
+            <p>Ask the user for a single character. Check if it's uppercase, lowercase, or neither (not a letter).</p>
+        </div>
+        <div id="q4" class="p">
+            <h1>Largest of Three Numbers</h1>
+            <p>Take three numbers as input and print the largest number among them without using Math.max().</p>
+        </div>
+        <div id="q5" class="p">
+            <h1>Leap Year Checker</h1>
+            <p>Ask the user for a year and determine if it's a leap year or not.</p>
+        </div>
+        <div id="q6" class="p">
+            <h1>Simple Calculator</h1>
+            <p>Ask the user for two numbers and an operator (+, -, *, /). Perform the operation and display the result.
+            </p>
+        </div>
+        <div id="q7" class="p">
+            <h1>Positive, Negative, or Zero</h1>
+            <p>Take a number input and check if it is positive, negative, or zero.
+                let n=prompt("Enter a number");</p>
+        </div>
+        <div id="q8" class="p">
+            <h1>User Greeting</h1>
+            <p>Ask for the user's name and time (24-hour format). Greet them accordingly:</p>
+        </div>
+        <div id="q9" class="p">
+            <h1>Traffic Light System</h1>
+            <p>Ask the user for a traffic light color (red, yellow, green). Print appropriate messages:
+                Red: "Stop!"
+                Yellow: "Get Ready!"
+                Green: "Go!"</p>
+        </div>
+        <div id="q10" class="p">
+            <h1>Multiplication Table</h1>
+            <p>Ask the user for a number and print its multiplication table up to 10.</p>
+        </div>
+        <div id="q11" class="p">
+            <h1>Grade Calculator</h1>
+            <p>Ask the user for their marks (0-100). Assign grades based on the range:
+                90-100: A,
+                80-89: B,
+                70-79: C,
+                60-69: D,
+                Below 60: F</p>
+        </div>
+        <div id="q12" class="p">
+            <h1>Simple Login System</h1>
+            <p>Set a predefined username and password. Ask the user to enter their credentials using prompt(). If
+                correct, print “Login Successful”; otherwise, print “Incorrect username or password.”</p>
+        </div>
+        <div id="q13" class="p">
+            <h1>Swapping Without Third Variable</h1>
+            <p>Take two numbers from the user and swap their values without using a third variable.</p>
+        </div>
+        <div id="q14" class="p">
+            <h1>FizzBuzz (Multiple of Both)</h1>
+            <p>Ask the user for a number. If it's a multiple of both 3 and 5, print “FizzBuzz”; if only 3, print “Fizz”;
+                if only 5, print “Buzz”; otherwise, print the number itself.</p>
+        </div>
+        <div id="q15" class="p">
+            <h1>Number Reversal</h1>
+            <p>Take a three-digit number from the user and print its reverse. (Example: 123 → 321).</p>
+        </div>
+        <div id="q16" class="p">
+            <h1>Sum of Digits</h1>
+            <p>Take a number from the user and print the sum of its digits. (Example: 123 → 1+2+3 = 6).</p>
+        </div>
+        <div id="q17" class="p">
+            <h1>Palindrome Checker</h1>
+            <p>Ask the user for a word. Check if it reads the same forward and backward. Print “Palindrome” or “Not a
+                Palindrome.”</p>
+        </div>
+        <div id="q18" class="p">
+            <h1>Reverse Without String Methods</h1>
+            <p>Ask the user for a word and reverse it without using .split(), .reverse(), or .join().</p>
+        </div>
+        <div id="q19" class="p">
+            <h1>Find Second Largest</h1>
+            <p>Take three numbers as input and find the second largest number (without using sort() or Math.max()).</p>
+        </div>
+        <div id="q20" class="p">
+            <h1>Find First Non-Repeating Character</h1>
+            <p>Ask the user for a word and find the first character that does not repeat. Example: hello → h (since e,l,
+                and o repeat).</p>
+        </div>
+    </div>
+    <div class="mainQ">
+        <div id="ans1"><a href="./html/q1.html"><button>Q1</button></a></div>
+        <div id="ans2"><a href="./html/q2.html"><button>Q2</button></a></div>
+        <div id="ans3"><a href="./html/q3.html"><button>Q3</button></a></div>
+        <div id="ans4"><a href="./html/q4.html"><button>Q4</button></a></div>
+        <div id="ans5"><a href="./html/q5.html"><button>Q5</button></a></div>
+        <div id="ans6"><a href="./html/q6.html"><button>Q6</button></a></div>
+        <div id="ans7"><a href="./html/q7.html"><button>Q7</button></a></div>
+        <div id="ans8"><a href="./html/q8.html"><button>Q8</button></a></div>
+        <div id="ans9"><a href="./html/q9.html"><button>Q9</button></a></div>
+        <div id="ans10"><a href="./html/q10.html"><button>Q10</button></a></div>
+        <div id="ans11"><a href="./html/q11.html"><button>Q11</button></a></div>
+        <div id="ans12"><a href="./html/q12.html"><button>Q12</button></a></div>
+        <div id="ans13"><a href="./html/q13.html"><button>Q13</button></a></div>
+        <div id="ans14"><a href="./html/q14.html"><button>Q14</button></a></div>
+        <div id="ans15"><a href="./html/q15.html"><button>Q15</button></a></div>
+        <div id="ans16"><a href="./html/q16.html"><button>Q16</button></a></div>
+        <div id="ans17"><a href="./html/q17.html"><button>Q17</button></a></div>
+        <div id="ans18"><a href="./html/q18.html"><button>Q18</button></a></div>
+        <div id="ans19"><a href="./html/q19.html"><button>Q19</button></a></div>
+        <div id="ans20"><a href="./html/q20.html"><button>Q20</button></a></div>
+    </div>
+    <script>
+        document.querySelectorAll(".mainQ div").forEach((button, index) => {
+            button.addEventListener("mouseenter", () => {
+                document.querySelectorAll(".p").forEach(p => p.style.display = "none"); // Hide all
+                document.querySelector(`#q${index + 1}`).style.display = "block"; // Show the hovered one
+            });
+
+            button.addEventListener("mouseleave", () => {
+                document.querySelector(`#q${index + 1}`).style.display = "none"; // Hide when not hovering
+            });
+        });
+        document.querySelectorAll(".mainQ div").forEach((button, index) => {
+            button.addEventListener("mouseenter", () => {
+                document.querySelector(".message").style.opacity = 1;
+            });
+            button.addEventListener("mouseleave", () => {
+                document.querySelector(".message").style.opacity = 0;
+            });
+        });
+    </script>
+</body>
+
+</html>
