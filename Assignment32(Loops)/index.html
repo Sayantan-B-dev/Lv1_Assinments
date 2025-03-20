@@ -102,13 +102,14 @@
             }
         }
 
-        header {
+        .header {
             background-color: black;
             color: white;
             text-align: center;
             border-radius: 10px;
             width: 100%;
             border-bottom: 1px solid white;
+            padding: 1rem 0rem;
         }
 
         footer {
@@ -171,7 +172,7 @@
 </head>
 
 <body>
-    <details style="margin: auto;">
+    <details class="header" style="margin: auto;">
         <summary>Open the console by pressing F12 or right-clicking and selecting "Inspect" to try these functions.
         </summary>
         <div class="console">
@@ -230,21 +231,21 @@
     </details>
     <div class="Questions">
         <div class="mainQ">
-            <div id="ans1"><a href="./html/q1.html"><button>Q1</button></a></div>
-            <div id="ans2"><a href="./html/q2.html"><button>Q2</button></a></div>
-            <div id="ans3"><a href="./html/q3.html"><button>Q3</button></a></div>
-            <div id="ans4"><a href="./html/q4.html"><button>Q4</button></a></div>
-            <div id="ans5"><a href="./html/q5.html"><button>Q5</button></a></div>
-            <div id="ans6"><a href="./html/q6.html"><button>Q6</button></a></div>
-            <div id="ans7"><a href="./html/q7.html"><button>Q7</button></a></div>
-            <div id="ans8"><a href="./html/q8.html"><button>Q8</button></a></div>
-            <div id="ans9"><a href="./html/q9.html"><button>Q9</button></a></div>
-            <div id="ans10"><a href="./html/q10.html"><button>Q10</button></a></div>
-            <div id="ans11"><a href="./html/q11.html"><button>Q11</button></a></div>
-            <div id="ans12"><a href="./html/q12.html"><button>Q12</button></a></div>
-            <div id="ans13"><a href="./html/q13.html"><button>Q13</button></a></div>
-            <div id="ans14"><a href="./html/q14.html"><button>Q14</button></a></div>
-            <div id="ans15"><a href="./html/q15.html"><button>Q15</button></a></div>
+            <div id="ans1"><a href="#solution1"><button onclick="openSolution('solution1')">Q1</button></a></div>
+            <div id="ans2"><a href="#solution2"><button onclick="openSolution('solution2')">Q2</button></a></div>
+            <div id="ans3"><a href="#solution3"><button onclick="openSolution('solution3')">Q3</button></a></div>
+            <div id="ans4"><a href="#solution4"><button onclick="openSolution('solution4')">Q4</button></a></div>
+            <div id="ans5"><a href="#solution5"><button onclick="openSolution('solution5')">Q5</button></a></div>
+            <div id="ans6"><a href="#solution6"><button onclick="openSolution('solution6')">Q6</button></a></div>
+            <div id="ans7"><a href="#solution7"><button onclick="openSolution('solution7')">Q7</button></a></div>
+            <div id="ans8"><a href="#solution8"><button onclick="openSolution('solution8')">Q8</button></a></div>
+            <div id="ans9"><a href="#solution9"><button onclick="openSolution('solution9')">Q9</button></a></div>
+            <div id="ans10"><a href="#solution10"><button onclick="openSolution('solution10')">Q10</button></a></div>
+            <div id="ans11"><a href="#solution11"><button onclick="openSolution('solution11')">Q11</button></a></div>
+            <div id="ans12"><a href="#solution12"><button onclick="openSolution('solution12')">Q12</button></a></div>
+            <div id="ans13"><a href="#solution13"><button onclick="openSolution('solution13')">Q13</button></a></div>
+            <div id="ans14"><a href="#solution14"><button onclick="openSolution('solution14')">Q14</button></a></div>
+            <div id="ans15"><a href="#solution15"><button onclick="openSolution('solution15')">Q15</button></a></div>
         </div>
         <div class="arrow">
             <span class="material-symbols-outlined">
@@ -352,7 +353,7 @@
         </div>
     </div>
     <section class="solution">
-        <details>
+        <details id="solution1">
             <summary>Solution 1</summary>
             <pre><code>
 function isISBN(n) {
@@ -370,7 +371,7 @@ function isISBN(n) {
 }
         </code></pre>
         </details>
-        <details>
+        <details id="solution2">
             <summary>Solution 2</summary>
             <pre><code>
 function gcd(a, b) {
@@ -383,7 +384,7 @@ function gcd(a, b) {
 }
     </code></pre>
         </details>
-        <details>
+        <details id="solution3">
             <summary>Solution 3</summary>
             <pre><code>
 function harshad(n) {
@@ -397,7 +398,7 @@ function harshad(n) {
 }
     </code></pre>
         </details>
-        <details>
+        <details id="solution4">
             <summary>Solution 4</summary>
             <pre><code>
 function isPerfectSquare(n) {
@@ -405,7 +406,7 @@ function isPerfectSquare(n) {
 }
     </code></pre>
         </details>
-        <details>
+        <details id="solution5">
             <summary>Solution 5</summary>
             <pre><code>
 function isAbundant(n) {
@@ -419,7 +420,7 @@ function isAbundant(n) {
 }
     </code></pre>
         </details>
-        <details>
+        <details id="solution6">
             <summary>Solution 6</summary>
             <pre><code>
 function fibonacci(n){
@@ -435,7 +436,7 @@ function fibonacci(n){
 }
     </code></pre>
         </details>
-        <details>
+        <details id="solution7">
             <summary>Solution 7</summary>
             <pre><code>
 function Divisors(x){
@@ -456,7 +457,7 @@ function Divisors(x){
         </code></pre>
         </details>
 
-        <details>
+        <details id="solution8">
             <summary>Solution 8</summary>
             <pre><code>
 function primeFactors(n) {
@@ -475,7 +476,7 @@ function primeFactors(n) {
         </code></pre>
         </details>
 
-        <details>
+        <details id="solution9">
             <summary>Solution 9</summary>
             <pre><code>
 function area() {
@@ -508,7 +509,7 @@ function area() {
         </code></pre>
         </details>
 
-        <details>
+        <details id="solution10">
             <summary>Solution 10</summary>
             <pre><code>
 function neonNum(n){
@@ -523,7 +524,7 @@ function neonNum(n){
         </code></pre>
         </details>
 
-        <details>
+        <details id="solution11">
             <summary>Solution 11</summary>
             <pre><code>
 function fibonacciEVEN(n){
@@ -539,7 +540,7 @@ function fibonacciEVEN(n){
         </code></pre>
         </details>
 
-        <details>
+        <details id="solution12">
             <summary>Solution 12</summary>
             <pre><code>
 function LargestDigit(n){
@@ -555,7 +556,7 @@ function LargestDigit(n){
             </code></pre>
         </details>
 
-        <details>
+        <details id="solution13">
             <summary>Solution 13</summary>
             <pre><code>
 function lcm(a, b) {
@@ -564,7 +565,7 @@ function lcm(a, b) {
             </code></pre>
         </details>
 
-        <details>
+        <details id="solution14">
             <summary>Solution 14</summary>
             <pre><code>
 function SumEvenDigit(n){
@@ -579,7 +580,7 @@ function SumEvenDigit(n){
             </code></pre>
         </details>
 
-        <details>
+        <details id="solution15">
             <summary>Solution 15</summary>
             <pre><code>
 function DaysIMonth(month,year){
@@ -615,6 +616,10 @@ function DaysIMonth(month,year){
     </footer>
     <script src="./index.js"></script>
     <script>
+        function openSolution(id) {
+            document.getElementById(id).open = true;
+        }
+
         document.querySelectorAll(".mainQ div").forEach((button, index) => {
             button.addEventListener("mouseenter", () => {
                 document.querySelectorAll(".p").forEach(p => p.style.display = "none"); // Hide all
