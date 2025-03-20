@@ -1,5 +1,5 @@
 console.info("\n%c=================== JavaScript Math & Number Functions ===================\n", "color: cyan; font-weight: bold;");
-
+console.info("You need to console.log these functions,else the prompt will open", "color: cyan; font-weight: bold;");
 console.warn("1. Check if a 10-digit number is a valid ISBN");
 console.log("Valid ISBN (Example: 1234567890): %cisISBN(1234567890)", "color: blue;");
 console.log("Invalid ISBN (Example: 12345): %cisISBN(12345)", "color: blue;");
@@ -40,7 +40,7 @@ console.warn("11. Sum of Even Indexed Fibonacci Numbers");
 console.log("Sum of even-indexed Fibonacci numbers up to 10: %cfibonacciEVEN(10)", "color: blue;");
 
 console.warn("12. Find Largest Digit in a Number");
-console.log("Largest Digit in 37495: %cLargestDigit(37495)", "color: blue;");
+console.log("Largest Digit in 37495(asks for input in prompt): %cLargestDigit()", "color: blue;");
 
 console.warn("13. Find LCM of Two Numbers");
 console.log("LCM of 12 and 18: %clcm(12, 18)", "color: blue;");
@@ -194,7 +194,7 @@ function fibonacciEVEN(n){
     return sum
 }
 
-function LargestDigit(n){
+function LargestDigit(){
     n= Number(prompt("Enter a number:\t"));
     let large=0
     while(n!=0){
